@@ -1,0 +1,163 @@
+:root {
+  --blue: #4d9699;
+  --darkblue: #336669;
+}
+
+input[type = checkbox] {
+  display: none;
+}
+
+input + label {
+  font-size: 1.2rem;
+  width: 3rem;
+  height: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: .1rem solid var(--blue);
+  border-radius: 50%;
+  background: var(--darkblue);
+  transition: .1s all;
+  cursor: pointer;
+  z-index: 999 !important;
+}
+
+input + label:hover {
+  transform: scale(.95);
+}
+
+input + label:after {
+  content: "👎";
+}
+
+input:checked + label {
+  background: var(--blue);
+  transform: scale(1.1);
+}
+
+input:checked + label:hover {
+  background: var(--blue);
+  transform: scale(1.05);
+}
+
+input:checked + label:after {
+  content: "👍";
+}
+
+* {
+  box-sizing: border-box;
+  position: relative;
+  padding: 0px;
+  margin: 0px;
+}
+
+body {
+  background: #fff;
+}
+
+.container {
+  position: relative;
+  width: 840px;
+  height: 100%;
+  margin: auto;
+}
+
+.row {
+  width: 100%;
+  padding-top: 20px;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+          flex-direction: row;
+}
+
+h1 {
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+}
+
+h2 {
+  background-color: #fff;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+}
+
+.hero {
+  float: right;
+  height: 300px;
+  width: 600px;
+  color: #fff;
+}
+.color-block {
+  height: 30px;
+  width: 30px;
+  margin: 5px 0 5px 5px;
+}
+.color-block:nth-child(1) {
+  margin-left: 35px;
+}
+
+.bordered {
+  border: 1px solid #333;
+}
+
+.purple {
+  background-color: #740eb7;
+}
+
+.blue {
+  background-color: #223480;
+}
+
+.turquoise {
+  background-color: #167F95;
+}
+
+.green {
+  background-color: #4DBA87;
+}
+
+.yellow {
+  background-color: #e5dd10;
+}
+.yellow h2, .yellow p {
+  color: #111;
+}
+
+.orange {
+  background-color: #e57310;
+}
+
+.red {
+  background-color: #c4212e;
+}
+
+.pink {
+  background-color: #c42167;
+}
+
+.black {
+  background-color: #111;
+}
+
+.grey {
+  background-color: #6f6f6f;
+}
+
+.brown {
+  background-color: #7b4314;
+}
+
+.white {
+  background-color: #fff;
+}
+.white h2, .white p {
+  color: #111;
+}
+
+h1.white {
+  background-color: #111;
+}

@@ -1,0 +1,50 @@
+a {
+  &:focus {
+    outline: none !important;
+  }
+}
+
+.card-img-top {
+  width: 95%;
+  margin: 2%;
+  cursor: pointer;
+  float: left;
+  
+  &:focus {
+    outline: none !important;
+  }
+}
+
+.fancybox-bg {
+  background: white;
+}
+
+.fancybox-caption {
+  font-family: 'Teko', sans-serif;
+  letter-spacing: 2.5px;
+  font-size: 24px;
+  font-weight: normal;
+  background: white;
+  color: black;
+  text-align: center;
+  &:before {
+    background-image: none;
+  }
+  
+  a {
+    color: #ccc !important;
+  }
+}
+
+.fancybox-button {
+  background: white;
+  color: black;
+}
+
+.fancybox-button, .fancybox-button:visited, .fancybox-button:link {
+  color: black;
+}
+.fancybox{
+  display: flex;
+  flex-direction: row;
+}
