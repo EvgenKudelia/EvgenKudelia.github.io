@@ -217,6 +217,7 @@ button>img{
 	flex-direction: row;
 	align-items: flex-start;
 	justify-content: space-around;
+	margin-bottom: 5%;
 }
 .contacts_block{
 	width: 40%;
@@ -238,4 +239,14 @@ button>img{
 }
 .contacts_block>div>a{
 	text-decoration-line: none;
+}
+footer{
+	width: 100%;
+	padding-top: 1%;
+	padding-bottom: 1%;
+	background: black;
+	color: white;
+}
+footer>p{
+	margin-left: 5%;
 }
