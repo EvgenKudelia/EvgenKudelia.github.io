@@ -5,7 +5,10 @@
 	<title></title>
 	<link rel="stylesheet" type="text/css" href="style/style.css">
 	<link rel="stylesheet" type="text/css" href="style/circle.css">
-	<script src="js/script.js"></script>
+	<link rel="stylesheet" type="text/css" href="style/menu.css">
+	<script defer src="js/script.js"></script>
+	<script defer src="js/menu.js"></script>
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
 </head>
 <body>
 	<div id="shadow">
@@ -22,6 +25,20 @@
 			<h3>
 				САЙТ-ПОРТФОЛИО ВЕБ-РАЗРАБОТЧИКА
 			</h3>
+			<content id="menu">
+				<input id="hamburger" class="hamburger" type="checkbox"/>
+				<label class="hamburger" for="hamburger">
+					<i></i>
+				</label>
+				<section class="drawer-list">
+					<ul>
+						<li><a href="#">dashboard</a></li>
+						<li><a href="#">notifications</a></li>
+						<li><a href="#">system administration</a></li>
+						<li><a href="#">support</a></li>
+					</ul>
+				</section>
+			</content>
 		</div>
 		<div class="block2">
 			<h1>
