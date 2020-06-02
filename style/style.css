@@ -81,7 +81,9 @@ header>div{
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	margin-top: 2%;
+}
+.skils>h2{
+	margin-top: 5%;
 }
 .skils_me{
 	width: 85%;
@@ -89,6 +91,7 @@ header>div{
 	flex-direction: row;
 	align-items: flex-start;
 	justify-content: space-around;
+	margin-bottom: 5%;
 }
 .skils_block{
 	width: 30%;
@@ -108,4 +111,11 @@ header>div{
 .c100>img{
 	z-index: 5;
 	width: 45%;
+}
+.portfolio{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
 }
