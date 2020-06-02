@@ -211,3 +211,31 @@ button>img{
 .contacts>h2{
 	margin-top: 7%;
 }
+.contacts_line{
+	width: 80%;
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+	justify-content: space-around;
+}
+.contacts_block{
+	width: 40%;
+	text-align: left;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: center;
+}
+.contacts_block>div{
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: flex-start;
+}
+.contacts_block>div>h4{
+	margin-right: 2%;
+}
+.contacts_block>div>a{
+	text-decoration-line: none;
+}
