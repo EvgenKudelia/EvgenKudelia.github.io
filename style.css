@@ -10,7 +10,10 @@ header{
 	margin: 1%;
 }
 .block1>h3{
-	width: 60%;
+	width: 99%;
+	position: absolute;
+	display: block;
+	text-align: center;
 }
 header>div{
 	width: 100%;
@@ -34,5 +37,22 @@ header>div{
 	border: 5px solid black;
 }
 .block2>h2{
+	margin-top: 12%;
+	margin-bottom: 15%;
+}
+.about{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+.about>h2{
 	margin-top: 5%;
+}
+.line{
+	width: 10%;
+	height: 1px;
+	background: black;
+	margin-top: 1%;
 }
