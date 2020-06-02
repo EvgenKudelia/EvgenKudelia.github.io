@@ -61,15 +61,17 @@ header>div{
 	width: 85%;
 	display: flex;
 	flex-direction: row;
-	align-items: center;
+	align-items: flex-start;
 	justify-content: space-around;
 }
 .about_block{
 	width: 30%;
-	height: 250px;
-	border: 1px solid black;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: flex-start;
+	text-align: center;
+}
+.about_block>img{
+	width: 15%;
 }
