@@ -88,7 +88,7 @@ h2 {
 .hero {
   float: right;
   height: 300px;
-  width: 600px;
+  width: 95%;
   color: #fff;
 }
 .color-block {
@@ -160,4 +160,7 @@ h2 {
 
 h1.white {
   background-color: #111;
+}
+.wow{
+  visibility: hidden;
 }

@@ -8,6 +8,14 @@
 	<script src="js/script.js"></script>
 </head>
 <body>
+	<div id="shadow">
+		<button onclick="exit()">
+			exit
+		</button>
+	</div>
+	<iframe id="img1" src="bydmaster/index.html"></iframe>
+	<iframe id="img2" src="project_social_Evgen/index.html"></iframe>
+	<iframe id="img3" src="imaginarium/index.html"></iframe>
 	<header>
 		<div class="block1">
 			<img src="project_social_Evgen/img/logo.png">
@@ -114,9 +122,33 @@
 		</h2>
 		<div class="line"></div>
 		<div class="portfolio_block">
-			<img class="prev" src="img/imaginarium_min.png">
-			<img class="next" src="img/project_social_min.png">
-			<img class="prev" src="img/bydmaster_min.png">
+			<div class="prev holder">
+				<img src="img/imaginarium_min.png">
+				<div class="block">
+					<h4>Имаджинариум</h4>
+					<button onclick="open1()">
+						Подробнее
+					</button>
+				</div>
+			</div>
+			<div class="next holder">
+				<img src="img/project_social_min.png">
+				<div class="block">
+					<h4>Новая этика соцыального взаимодействия</h4>
+					<button onclick="open2()">
+						Подробнее
+					</button>
+				</div>
+			</div>
+			<div class="prev holder">
+				<img src="img/bydmaster_min.png">
+				<div class="block">
+					<h4>БудМастер</h4>
+					<button onclick="open3()">
+						Подробнее
+					</button>
+				</div>
+			</div>
 		</div>
 	</section>
 </body>

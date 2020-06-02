@@ -1,5 +1,8 @@
 body{
 	margin: 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 header{
 	width: 100%;
@@ -138,4 +141,55 @@ header>div{
 }
 .next{
 	width: 25%;
+}
+.prev>img, .next>img{
+	width: 100%;
+}
+.holder{
+    position:relative;   
+    background:#ff6600;
+    text-align: center;
+}
+.block{
+    position:absolute;
+    width: 100%;
+    height: 100%;
+    left:0;
+    bottom:0;
+    right:0;
+    top:0;
+    background:rgba(255,255,255, 0.7);
+    display:none;
+}
+.holder:hover .block{
+    display:block;
+}
+body>iframe{
+	position: fixed;
+	margin-top: 2.5%;
+	width: 80%;
+	height: 90%;
+	z-index: 10;
+}
+#shadow{
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	background: rgba(122, 122, 122, 0.5);
+	z-index: 8;
+	display: none;
+}
+#shadow>button{
+	float: right;
+	margin-top: 2%;
+	margin-right: 2%;
+}
+#img1{
+	display: none;
+}
+#img2{
+	display: none;
+}
+#img3{
+	display: none;
 }
