@@ -6,9 +6,14 @@
 	<link rel="stylesheet" type="text/css" href="style/style.css">
 	<link rel="stylesheet" type="text/css" href="style/circle.css">
 	<link rel="stylesheet" type="text/css" href="style/menu.css">
-	<script defer src="js/script.js"></script>
+	<link rel="stylesheet" type="text/css" href="style/animate.css">
+	<script defer src="js/script.js"></script>+6
 	<script defer src="js/menu.js"></script>
 	<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+	<script>
+		new WOW().init();
+	</script>
 </head>
 <body>
 	<div id="shadow">
@@ -140,7 +145,7 @@
 		</h2>
 		<div class="line"></div>
 		<div class="portfolio_block">
-			<div class="prev holder">
+			<div class="prev holder wow bounceInLeft">
 				<img src="img/imaginarium_min.png">
 				<div class="block">
 					<h4>Имаджинариум</h4>
@@ -149,7 +154,7 @@
 					</button>
 				</div>
 			</div>
-			<div class="next holder">
+			<div class="next holder wow bounceInUp">
 				<img src="img/project_social_min.png">
 				<div class="block">
 					<h4>Новая этика соцыального взаимодействия</h4>
@@ -158,7 +163,7 @@
 					</button>
 				</div>
 			</div>
-			<div class="prev holder">
+			<div class="prev holder wow bounceInRight">
 				<img src="img/bydmaster_min.png">
 				<div class="block">
 					<h4>БудМастер</h4>
