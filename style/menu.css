@@ -43,13 +43,13 @@ ul {
   padding-top: 125px;
   transition: width 475ms ease-out, transform 450ms ease, border-radius .8s .1s ease;
   border-bottom-left-radius: 100vw;
-  background-color: #3d88ce;
-  background-color: rgba(12, 106, 194, 0.8);
+  background-color: #262526;
+  background-color: rgba(38, 37, 38, 0.7);
   z-index: 40;
 }
 @media (min-width: 768px) {
   .drawer-list {
-    width: 40vw;
+    width: 20vw;
   }
 }
 .drawer-list ul {
@@ -90,8 +90,8 @@ ul {
 }
 .drawer-list li a:hover {
   cursor: pointer;
-  background-color: #88c2f8;
-  background-color: rgba(17, 132, 240, 0.5);
+  background-color: #262526;
+  background-color: rgba(38, 37, 38, 0.7);
 }
 
 input.hamburger {
@@ -282,7 +282,7 @@ label.hamburger {
   display: block;
   height: 50px;
   width: 50px;
-  background: white;
+  background: #f3f3f3;
   border-radius: 5px;
 }
 label.hamburger:hover {
