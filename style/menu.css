@@ -282,6 +282,8 @@ label.hamburger {
   display: block;
   height: 50px;
   width: 50px;
+  background: white;
+  border-radius: 5px;
 }
 label.hamburger:hover {
   cursor: pointer;
@@ -308,9 +310,10 @@ label.hamburger text open {
 }
 label.hamburger > i {
   position: absolute;
-  width: 100%;
+  width: 90%;
   height: 2px;
   top: 50%;
+  left: 2px;
   background-color: black;
   pointer-events: auto;
   transition-duration: .35s;
@@ -337,5 +340,5 @@ label.hamburger > i:after {
 label.hamburger {
   position: fixed;
   top: 15px;
-  right: 50px;
+  right: 25px;
 }
