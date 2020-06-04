@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>bydmaster</title>
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	
+	<script type="text/javascript"  src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js">
+	</script>
+	<script type="text/javascript">
+ 		$(document).ready(function(){
+    	$("#menu").on("click","a", function (event) {
+        	event.preventDefault();
+    	    var id  = $(this).attr('href'),
+        	    top = $(id).offset().top;
+        	$('body,html').animate({scrollTop: top}, 1500);
+    		});
+		});
+		$(document).ready(function(){
+    	$("#yak6").on("click","a", function (event) {
+        	event.preventDefault();
+    	    var id  = $(this).attr('href'),
+        	    top = $(id).offset().top;
+        	$('body,html').animate({scrollTop: top}, 1500);
+    		});
+		});
+		(function($){
+	    $(function() {
+	        $('.menu__icon').on('click', function() {
+	          $(this).closest('.menu').toggleClass('menu_state_open');
+	        });
+	      });
+	    })(jQuery);
+	</script>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css?family=Comfortaa&display=swap" rel="stylesheet">
+</head>
+<body>
+	<div class="container">
+
+		<!-- HEADER -->
+
+		<header id="yak1" class="header">
+			<img class="logo" src="">
+			<!-- МЕНЮ ДЛЯ МОБИЛЬНОЙ ВЕРСИИ -->
+			<div class="menu">
+			      <div class="menu__icon">
+			        <span></span>
+			        <span></span>
+			        <span></span>
+			        <span></span>
+			      </div>
+			    
+			      <div class="menu__links">
+			          <a class="menu__links-item" href="#yak1">ГЛАВНАЯ</a>
+			          <a class="menu__links-item" href="#yak3">О НАС</a>
+			          <a class="menu__links-item" href="#yak4">ОТДЕЛЫ</a>
+			          <a class="menu__links-item" href="#headline2">ТОВАРЫ</a>
+			          <a class="menu__links-item" href="#yak6">КОНТАКТЫ</a>
+			      </div>
+			</div>		
+				<nav class="nav">
+
+				<ul id="menu" class="ul_head">
+					<li class="li_head li_head_home">
+						<a class="navigation navigation_home" href="#yak1">Главная</a>
+					</li>
+					<li class="li_head">
+						<a class="navigation" href="#yak3">О нас</a>
+					</li>
+					<li class="li_head">
+						<a class="navigation" href="#yak4">Отделы</a>
+					</li>
+					<li class="li_head">
+						<a class="navigation" href="#headline2">Товары</a>
+					</li>
+					<li class="li_head">
+						<a class="navigation" href="#yak6">Контакты</a>
+					</li>
+				</ul>
+			</nav>
+			<div class="fb">
+				<h1 class="headline">БУДМАСТЕР</h1>
+				<p class="text_main_2">Строительный магазин в Кривом Роге</p>
+				<button>
+				<p>Ознакомиться</p>
+				</button>
+			</div>	
+				
+		</header>
+		<!-- ABOUT US -->
+
+		<div class="about-us" id="about-us">
+			<div id="yak2" class="text">
+				<h2 id="yak3" class="headline2_1">О нас</h2>
+				<div class="stick"></div>
+				<p class="paragraph1">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat.</p>
+				<p class="paragraph1">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+				<div class="stick2"></div>
+				<ul class="menu2">
+					<li> Обои </li>
+					<li> Лакокрасочные материалы</li>
+					<li> Строительные смеси </li>
+					<li> Малярные инструменты</li>
+					<li> Материалы для потолка</li>
+				</ul>
+			</div>
+			<img class="image1" src="img/3123781231.jpg">
+		</div>
+
+		<!-- SECTION MAIN PRODUCTS -->
+
+		<section class="section">
+
+			<h2 id="headline2" class="headline2">Основные товары</h2>
+			<p class="text_under1">Самые востребованные товары в нашем магазине</p>
+
+			<div class="service_desc">
+				<img class="icon" src="icons/paper.png">
+				<div class="text">	
+					<h3 class="headline3">Обои</h3>
+					<p class="text_under">Простые, флизелиновые, акриловые, виниловые.</p>
+				</div>
+			</div>
+			<div class="service_desc">
+				<img class="icon" src="icons/paint.png">
+				<div class="text">	
+					<h3 class="headline3">Лакокрасочные материалы</h3>
+					<p class="text_under">Эмали ПФ, краска масляная МА, лаки безцветные ПФ.</p>
+				</div>
+			</div>
+			<div class="service_desc">
+				<img class="icon" src="icons/mixtures.png">
+				<div class="text">	
+					<h3 class="headline3">Строительные смеси</h3>
+					<p class="text_under">Шпаклевки финишные, шпаклевки стартовые, клеющие смеси, ремонтные смеси.</p>
+				</div>
+			</div>
+			<div class="service_desc">
+				<img class="icon" src="icons/brush.png">
+				<div class="text">	
+					<h3 class="headline3">Малярные инструменты</h3>
+					<p class="text_under">Кисточки, валики, малярная лента, макловицы.</p>
+				</div>
+			</div>
+			<div class="service_desc">
+				<img class="icon" src="icons/roof_tiles.png">
+				<div class="text">	
+					<h3 class="headline3">Материалы для крыши</h3>
+					<p class="text_under">Плитка потолочная, натяжные потолки, потолки армстронг. </p>
+				</div>
+			</div>
+			<div class="service_desc">
+				<img class="icon" src="icons/door.png">
+				<div class="text">	
+					<h3 class="headline3">Двери межкомнатные</h3>
+					<p class="text_under">Колекция: симпли, модерн, маэстро, элегант. </p>
+				</div>
+			</div>
+			<!-- </div> -->
+		</section>
+	
+		<!-- SECTION PHOTO -->
+
+		<section class="section"></section>
+		<section  class="industries">
+			<h2 id="yak4" class="headline2">Основные отделы</h2>
+			<p class="text_under">lorem ispum dolor sit amet</p>
+			<hr class="line">
+			<div class="image_industries">
+				<img class="img_ind" alt="" src="img/walls.jpg">
+				<img class="img_ind" alt="" src="img/bucket.jpg">
+				<img class="img_ind" alt="" src="img/woods.jpg">
+				<img class="img_ind" alt="" src="img/clay.jpg">
+			</div>
+		</section>
+
+		<!-- SECTION CONTACTS -->
+
+		<section id="yak3" class="section4">
+			<h2 class="headline2">КОНТАКТЫ</h2>
+			<p class="text_under">Мы на связи в любое время суток!</p>
+			<hr class="line">
+			<div class="block_2_1">
+					<div class="block_1">
+						<iframe class="map" style="width: 90%;"src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d667.8854559939168!2d33.43694442925724!3d47.964583396690735!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40dadfffd32eb6d7%3A0xa884df4f579c6556!2z0L_RgNC-0YHQv9C10LrRgiAyMDAt0YDRltGH0YfRjyDQmtGA0LjQstC-0LPQviDQoNC-0LPRgywgN9CQLCDQmtGA0LjQstC40Lkg0KDRltCzLCDQlNC90ZbQv9GA0L7Qv9C10YLRgNC-0LLRgdGM0LrQsCDQvtCx0LvQsNGB0YLRjCwgNTAwMDA!5e0!3m2!1suk!2sua!4v1574503183121!5m2!1suk!2sua" 
+						<!-- width="500" style="border:0;"></iframe>
+					</div>
+					<div class="block_2">
+						<div class="block_2 block_3">
+							<p class="text_small">
+							Адрес
+							</p>
+							<p class="text_main">
+							проспект 200-річчя Кривого Рогу, 7А, Кривий Ріг, Дніпропетровська область
+							</p>
+							<br>
+							<p class="text_small">
+								Телефон
+							</p>
+							<a href="">
+								<p class="text_main_1">
+									+38 096 391 30 	99
+								</p>
+							</a>
+							<p class="text_small">
+								Почта
+							</p>
+							<a href="">
+								<p class="text_main_1">
+								aa_drozdov@ukr.net
+							</p>
+							</a>
+						</div>
+						<div class="block_2 block_3">
+							<h3 class="headline3_1">
+								График работы
+							</h3>
+							<p class="text_main_1">
+								с 9:00 до 18:00 
+								<br>
+								Без выходных
+							</p>
+						</div>
+					</div>
+				</div>
+		</section>
+
+		<!-- FOOTER -->
+
+		<footer id="yak6" class="footer">
+			<div class="about">
+				<h3 class="headline3-f">
+					О нас
+				</h3>
+				<p class="text_main-f">
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat.
+				</p>
+			</div>
+			<div class=links>
+				<h3 class="headline3-f">
+					Быстрые ссылки
+				</h3 >
+				<ul>
+					<li><a style="color: white;" href="#yak1">Главная</a></li>
+					<li><a style="color: white;" href="#yak3">О нас</a></li>
+					<li><a style="color: white;" href="#headline2">Товары</a></li>
+					<li><a style="color: white;" href="#yak4">Отделы магазина</a></li>
+					<li><a style="color: white;" href="#yak6">Контакты</a></li>
+				</ul>
+			</div>
+			<div class="subscribe">
+				<h3 class="headline3-f">
+					Контактные Данные
+				</h3>
+				<p class="text_main-f">
+					Адресс: Проспект 200-летие Кривому Рогу 7а,Кривой Рог, Украина <br><br>
+					Телефон: +380963913099 <br><br>
+					Email: aa_drozdov@ukr.net
+				</p>
+			</div>
+		</footer>
+	</div>
+</body>
+</html>

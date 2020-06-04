@@ -161,3 +161,6 @@ h2 {
 h1.white {
   background-color: #111;
 }
+.wow{
+  visibility: hidden;
+}

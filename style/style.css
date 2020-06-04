@@ -1,0 +1,270 @@
+body{
+	margin: 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background: url(https://bgfons.com/upload/wood%20_texture2.jpg);
+}
+header{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	color: white;
+}
+.block1>img{
+	width: 15%;
+	margin: 1%;
+}
+.block1>h3{
+	width: 99%;
+	position: absolute;
+	display: block;
+	text-align: center;
+}
+header>div{
+	width: 100%;
+}
+.block1{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	text-align: center;
+}
+.block2{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin-top: 10%;
+	text-align: center;
+}
+.block2>h1{
+	padding: 1%;
+	border: 5px solid #f3f3f3;
+}
+.block2>h2{
+	margin-top: 12%;
+	margin-bottom: 15%;
+}
+.about{
+	width: 95%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	background: #f3f3f3;
+	border-radius: 15px 15px 0 0;
+}
+.about>h2{
+	margin-top: 7%;
+}
+.line{
+	width: 10%;
+	height: 1px;
+	background: black;
+	margin-top: 1.5%;
+	margin-bottom: 1.5%;
+}
+.about_me{
+	width: 85%;
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+	justify-content: space-around;
+}
+.about_block{
+	width: 30%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-start;
+	text-align: center;
+}
+.about_block>img{
+	width: 15%;
+}
+.skils{
+	width: 95%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	background: #f3f3f3;
+}
+.skils>h2{
+	margin-top: 5%;
+}
+.skils_me{
+	width: 85%;
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+	justify-content: space-around;
+}
+.skils_block{
+	width: 30%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-start;
+	text-align: center;
+	margin-bottom: 5%;
+}
+
+.c100{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+.c100>img{
+	z-index: 5;
+	width: 45%;
+}
+.portfolio{
+	width: 95%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	background: #d7d8da;
+	box-shadow: 0 0 15px  rgba(0,0,0,0.5);
+	z-index: 25;
+}
+.portfolio>h2{
+	margin-top: 7%;
+}
+.portfolio_block{
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center; 
+	margin-top: 2%;
+	margin-bottom: 15%;
+}
+.prev{
+	width: 20%;
+}
+.next{
+	width: 25%;
+}
+.prev>img, .next>img{
+	width: 100%;
+}
+.holder{
+    position:relative;
+    text-align: center;
+}
+.block{
+    position:absolute;
+    width: 100%;
+    height: 100%;
+    left:0;
+    bottom:0;
+    right:0;
+    top:0;
+    background:rgba(215, 216, 218, 0.7);
+    display:none;
+}
+.holder:hover .block{
+    display:block;
+}
+body>iframe{
+	position: fixed;
+	margin-top: 2.5%;
+	width: 80%;
+	height: 90%;
+	z-index: 50;
+}
+#shadow{
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	background: rgba(122, 122, 122, 0.5);
+	z-index: 49;
+	display: none;
+}
+#shadow>button{
+	float: right;
+	margin-top: 2%;
+	margin-right: 2%;
+	width: 5%;
+	border: 0;
+	background: 0;
+	cursor: pointer
+}
+button>img{
+	width: 100%;
+}
+#img1{
+	display: none;
+}
+#img2{
+	display: none;
+}
+#img3{
+	display: none;
+}
+.contacts{
+	width: 95%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	background: white;
+	margin-bottom: 2%;
+	border-radius: 0 0 15px 15px;
+}
+.contacts>h2{
+	margin-top: 7%;
+}
+.contacts_line{
+	width: 80%;
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+	justify-content: space-around;
+	margin-bottom: 5%;
+}
+.contacts_block{
+	width: 40%;
+	text-align: left;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: center;
+}
+.contacts_block>div{
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: flex-start;
+}
+.contacts_block>div>h4{
+	margin-right: 2%;
+}
+.contacts_block>div>a{
+	text-decoration-line: none;
+}
+footer{
+	width: 100%;
+	padding-top: 1%;
+	padding-bottom: 1%;
+	background: rgba(0,0,0,0.5);
+	color: white;
+}
+footer>p{
+	margin-left: 5%;
+}
+p>input, p>textarea{
+	padding: 5px 20px;
+}
+form>input{
+	padding: 3%;
+	border-radius: 10px;
+}

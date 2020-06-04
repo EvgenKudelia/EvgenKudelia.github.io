@@ -3,28 +3,227 @@
 <head>
 	<meta charset="utf-8">
 	<title></title>
-	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="style/style.css">
+	<link rel="stylesheet" type="text/css" href="style/circle.css">
+	<link rel="stylesheet" type="text/css" href="style/menu.css">
+	<link rel="stylesheet" type="text/css" href="style/animate.css">
+	<script defer src="js/script.js"></script>+6
+	<script defer src="js/menu.js"></script>
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+	<script>
+		new WOW().init();
+	</script>
 </head>
 <body>
-	<div class="container">
+	<div id="shadow">
+		<button onclick="exit()">
+			<img src="img/exit.png">
+		</button>
+	</div>
+	<iframe id="img3" src="bydmaster/index.html"></iframe>
+	<iframe id="img2" src="project_social_Evgen/index.html"></iframe>
+	<iframe id="img1" src="imaginarium/index.html"></iframe>
+	<header id="header">
 		<div class="block1">
-			<img src="img/face.png">
-			<h1>
-				Начинающий веб-разработчик
-				<br><br>
-				Куделя Євген
-			</h1>
+			<img src="project_social_Evgen/img/logo.png" class="wow bounceInLeft" data-wow-delay="0.5s">
+			<h3 class="wow bounceInDown" data-wow-delay="0.5s">
+				САЙТ-ПОРТФОЛИО ВЕБ-РАЗРАБОТЧИКА
+			</h3>
+			<content id="menu">
+				<input id="hamburger" class="hamburger" type="checkbox"/>
+				<label class="hamburger wow bounceInRight" data-wow-delay="0.5s" for="hamburger">
+					<i></i>
+				</label>
+				<section class="drawer-list">
+					<ul>
+						<li><a href="#header">Главая</a></li>
+						<li><a href="#abouts">Обо мне</a></li>
+						<li><a href="#skils">Навыки</a></li>
+						<li><a href="#portfolio">Мои проекты</a></li>
+						<li><a href="#contacts">Контакты</a></li>
+					</ul>
+				</section>
+			</content>
 		</div>
 		<div class="block2">
-			<h2>
-				Мои проэкты:
+			<h1 class="wow slideInUp" data-wow-delay="0.5s">
+				Куделя Євген
+			</h1>
+			<h2 class="wow slideInUp" data-wow-delay="0.5s">
+				WEB-РАЗРАБОТЧИК / HTML-ВЕРСТАЛЬЩИК <br>
+				ПРОГРАММИСТ JAVASCRIPT	
 			</h2>
 		</div>
-		<div class="block3">
-			<a href="project_social_Evgen/rules.html">
-				<h3>ЗОЖ на карантине</h3>
-			</a>
+	</header>
+	<section class="about" id="abouts">
+		<h2>
+			Обо мне
+		</h2>
+		<div class="line"></div>
+		<div class="about_me">
+			<div class="about_block wow bounceInLeft">
+				<h3>
+					Немного о себе
+				</h3>
+				<img src="img/me1.png">
+				<p>
+					Доброго времени суток,меня зовут Кулинич Иван
+					Я занимаюсь web-разработкой с нуля.
+					Выполняю верстку и программирование сайтов,а так же доработку,добавляя полный функционал на сайт!Верстаю адаптивную верстку,
+					таким образом сайт получается красивым на любом устройстве,будь то комьютер,ноутбук или телефон!
+				</p>
+			</div>
+			<div class="about_block wow bounceInUp">
+				<h3>
+					Знания и Умения
+				</h3>
+				<img src="img/me2.png">
+				<p>
+					Знаю такие языки программирования,как: JavaScript, HTML(5), CSS(3).<br>
+					Умею верстать адаптивные сайты под планшеты и мобильные устройства.
+				</p>
+			</div>
+			<div class="about_block wow bounceInRight">
+				<h3>
+					Самообразование
+				</h3>
+				<img src="img/me3.png">
+				<p>
+					Курсы в интернете, видеокурсы, книги, документация, форумы, статьи...
+				</p>
+			</div>
 		</div>
-	</div>
+	</section>
+	<section class="skils" id="skils">
+		<h2>
+			Профессиональные навыки
+		</h2>
+		<div class="line"></div>
+		<div class="skils_me">
+			<div class="skils_block wow bounceInLeft">
+				<h3>
+					HTML5
+				</h3>
+				<div class="c100 p85 big red">
+					<img src="img/html5.png">
+					<div class="slice">
+						<div class="bar"></div>
+						<div class="fill"></div>
+					</div>
+				</div>
+			</div>
+			<div class="skils_block wow bounceInUp">
+				<h3>
+					CSS3
+				</h3>
+				<div class="c100 p80 big blue">
+					<img src="img/css3.png">
+					<div class="slice">
+						<div class="bar"></div>
+						<div class="fill"></div>
+					</div>
+				</div>
+			</div>
+			<div class="skils_block wow bounceInRight">
+				<h3>
+					JavaScript
+				</h3>
+				<div class="c100 p60 big yellow">
+					<img src="img/java.png">
+					<div class="slice">
+						<div class="bar"></div>
+						<div class="fill"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="portfolio" id="portfolio">
+		<h2>
+			Мои проекты:
+		</h2>
+		<div class="line"></div>
+		<div class="portfolio_block">
+			<div class="prev holder wow bounceInLeft">
+				<img src="img/imaginarium_min.png">
+				<div class="block">
+					<h4>Имаджинариум</h4>
+					<button onclick="open1()">
+						Подробнее
+					</button>
+				</div>
+			</div>
+			<div class="next holder wow bounceInUp">
+				<img src="img/project_social_min.png">
+				<div class="block">
+					<h4>Новая этика соцыального взаимодействия</h4>
+					<button onclick="open2()">
+						Подробнее
+					</button>
+				</div>
+			</div>
+			<div class="prev holder wow bounceInRight">
+				<img src="img/bydmaster_min.png">
+				<div class="block">
+					<h4>БудМастер</h4>
+					<button onclick="open3()">
+						Подробнее
+					</button>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="contacts" id="contacts">
+		<h2>
+			Контакты
+		</h2>
+		<div class="line">
+			
+		</div>
+		<h3>
+			Если у вас есть вопросы, я с радостью отвечу на них!<br>
+			Для этого свяжитесь со мной удобным для вас способом и я отвечу Вам в ближайшее время!
+		</h3>
+		<div class="contacts_line">
+			<div class="contacts_block wow bounceInLeft">
+				<div>
+					<h4>E-mail:</h4><p>evgen.kydelia@gmail.com</p>
+				</div>
+				<div>
+					<h4>Вконтаке:</h4><a href="https://vk.com/zheker">https://vk.com/zheker</a>
+				</div>
+				<div>
+					<h4>Web-сайт:</h4><a href="evgenkudelia.github.io">evgenkudelia.github.io</a>
+				</div>
+				<div>
+					<h4>Skype:</h4><p>_Zheker_</p>
+				</div>
+			</div>
+			<div class="contacts_block wow bounceInRight">
+				<h4>Так же Вы можете написать свое сообщения прямо здесь!<br>Вам необходио заполнить все поля!</h4>
+				<div>
+					<form method="post" action="https://formspree.io/zollex69@gmail.com">
+						<p>Ваше имя
+							<br>
+							<input type="text" size="32" required name="your_name" placeholder="Ваше имя">
+						</p>
+						<p>Ваш E-mail
+							<br>
+							<input type="email" size="32" required name="email" placeholder="example@mail.com">
+						</p>
+						<p>Ваше сообщение
+							<br>
+							<textarea type="text" name="comment" cols="34" rows="5" name="messages" placeholder="Ваше сообщение"></textarea>
+						</p>
+						<input type="submit" value="Send" class="btn-sub">
+					</form>
+				</div>
+			</div>
+		</div>
+	</section>
+	<footer>
+		<p>© 2020 Куделя Женя. Создание сайтов</p>
+	</footer>
 </body>
 </html>
